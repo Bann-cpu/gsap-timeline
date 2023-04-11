@@ -1,6 +1,8 @@
-var baseAnim = gsap.timeline({defaults: {duration:3, rotate: 360, backgroundColor: "green", yoyo: true, repeatDelay: 4, repeat: -1, ease: "power1.out"}})
+var baseAnim = gsap.timeline({defaults: {duration:3, rotate: 360, backgroundColor: "green", yoyo: true, repeatDelay: 4, repeat: -1, ease: "power1.out", delay: 4}})
 
 baseAnim.to(".first", {x: 758}).to(".second", {x: 758}, ">")
+
+let animate  = gsap.to('.animation', {duration: 2, ease: "power1.out", rotate: 360}) 
 
 /*
 gsap.to(".first", {x: 758, duration: 2, ease: "power1"})

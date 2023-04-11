@@ -20,7 +20,7 @@ body {
 
 .content {
     height: 40px;
-    width: fit-content;
+    width: 81px;
     background-color: rgb(196, 114, 7);
     border: 1px rgb(4, 238, 121) solid;
 }
