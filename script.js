@@ -1,11 +1,9 @@
-var baseAnim = gsap.timeline({defaults: {duration:3, rotate: 360, backgroundColor: "green", yoyo: true, repeatDelay: 4, repeat: -1, ease: "power1.out", delay: 4}})
+var baseAnim = gsap.timeline({
+    defaults: {duration:3, rotate: 360, backgroundColor: "green", yoyo: true, repeatDelay: 3, repeat: -1, ease: "power2.out", delay: 4}
+    ,onStart : () => console.log("L'animation a débuté")
+    ,onComplete: () => console.log("Complété")
+    ,onUpdate: () => console.log("Actualisé")
+    ,onRepeat: () => console.log("On repeat")
 
+})
 baseAnim.to(".first", {x: 758}).to(".second", {x: 758}, ">")
-
-let animate  = gsap.to('.animation', {duration: 2, ease: "power1.out", rotate: 360}) 
-
-/*
-gsap.to(".first", {x: 758, duration: 2, ease: "power1"})
-gsap.to(".second", {x: 737, duration: 2, ease: "power1.out"}, ">") End of previous animation
-*/
-
